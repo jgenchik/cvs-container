@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
   }
 
   angularButtonClicked(event: any) {
-    this.snackBar.open('Angular button clicked', '', {duration: 3000});
+    this.snackBar.open(event.detail, '', {duration: 3000});
   }
 
 
