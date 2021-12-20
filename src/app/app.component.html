@@ -6,7 +6,7 @@
 
     <mat-card class="mat-elevation-z8">
         <mat-card-title-group>
-            <mat-card-title class="title-angular">Angular</mat-card-title>
+            <mat-card-title class="title-angular">Angular Element</mat-card-title>
             <mat-card-subtitle>
                 <!-- Elements  -->
                 <mat-slide-toggle [checked]="showAngular" (change)="showAngularChanged($event)">Show</mat-slide-toggle>
@@ -17,6 +17,24 @@
         <mat-card-content>
             <angular-benchmark *ngIf="showAngular" header="Store Locator" (buttonClickedEvent)="angularButtonClicked($event)">
             </angular-benchmark>
+        </mat-card-content>
+
+        <mat-card-actions>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="mat-elevation-z8">
+        <mat-card-title-group>
+            <mat-card-title class="title-angular">Angular Lib</mat-card-title>
+            <mat-card-subtitle>
+                <!-- Elements  -->
+                <mat-slide-toggle [checked]="showAngularLib" (change)="showAngularLibChanged($event)">Show</mat-slide-toggle>
+            </mat-card-subtitle>
+            <img mat-card-sm-image src="../assets/images/angular.png">
+        </mat-card-title-group>
+        
+        <mat-card-content>
+            <ngx-store-locator *ngIf="showAngularLib" header="Store Locator" (buttonClickedEvent)="angularLibButtonClicked($event)"></ngx-store-locator>
         </mat-card-content>
 
         <mat-card-actions>

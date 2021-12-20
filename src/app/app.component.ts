@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   title = 'cvs-container';
 
   showAngular: boolean =  JSON.parse(localStorage.getItem('showAngular') || 'true');  // converts string to boolean
+  showAngularLib: boolean =  JSON.parse(localStorage.getItem('showAngularLib') || 'true');
   showReact: boolean =  JSON.parse(localStorage.getItem('showReact') || 'true');
   showStencil: boolean =  JSON.parse(localStorage.getItem('showStencil') || 'true');
 
@@ -24,6 +25,10 @@ export class AppComponent implements OnInit {
   showAngularChanged(event: MatSlideToggleChange) {
     this.showAngular = event.checked;
     localStorage.setItem('showAngular', event.checked.toString());
+  }
+  showAngularLibChanged(event: MatSlideToggleChange) {
+    this.showAngularLib = event.checked;
+    localStorage.setItem('showAngularLib', event.checked.toString());
   }
 
   showReactChanged(event: MatSlideToggleChange) {
@@ -38,6 +43,9 @@ export class AppComponent implements OnInit {
 
   angularButtonClicked(event: any) {
     this.snackBar.open(event.detail, '', {duration: 3000});
+  }
+  angularLibButtonClicked(event: any) {
+    this.snackBar.open(event, '', {duration: 3000});
   }
 
 

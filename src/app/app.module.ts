@@ -10,6 +10,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { NotImplementedComponent } from './not-implemented/not-implemented.component';
 
+import { StoreLocatorModule } from 'store-locator';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +24,8 @@ import { NotImplementedComponent } from './not-implemented/not-implemented.compo
     MatCardModule,
     MatSlideToggleModule,
     MatSnackBarModule,
+
+    StoreLocatorModule,
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
