@@ -8,7 +8,6 @@
         <mat-card-title-group>
             <mat-card-title class="title-angular">Angular Element</mat-card-title>
             <mat-card-subtitle>
-                <!-- Elements  -->
                 <mat-slide-toggle [checked]="showAngular" (change)="showAngularChanged($event)">Show</mat-slide-toggle>
             </mat-card-subtitle>
             <img mat-card-sm-image src="../assets/images/angular.png">
@@ -27,7 +26,6 @@
         <mat-card-title-group>
             <mat-card-title class="title-angular">Angular Lib</mat-card-title>
             <mat-card-subtitle>
-                <!-- Elements  -->
                 <mat-slide-toggle [checked]="showAngularLib" (change)="showAngularLibChanged($event)">Show</mat-slide-toggle>
             </mat-card-subtitle>
             <img mat-card-sm-image src="../assets/images/angular.png">
@@ -70,7 +68,8 @@
         </mat-card-title-group>
         
         <mat-card-content>
-            <div *ngIf="showStencil"><app-not-implemented></app-not-implemented></div>
+            <!-- <div *ngIf="showStencil"><app-not-implemented></app-not-implemented></div> -->
+            <stencil-locator name="aaaaaa"></stencil-locator>
         </mat-card-content>
 
         <mat-card-actions>
