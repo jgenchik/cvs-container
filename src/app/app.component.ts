@@ -47,6 +47,12 @@ export class AppComponent implements OnInit {
   angularLibButtonClicked(event: any) {
     this.snackBar.open(event, '', {duration: 3000});
   }
-
+  stencilButtonClicked(event: any) {
+    this.snackBar.open(`We are searching for pharmacies near zipcode ${event.detail.value}. Please wait..`, '', {duration: 3000});
+  }
+  reactButtonClicked(event: any) {
+    console.log('event', event);
+    this.snackBar.open(`We are searching for pharmacies near zipcode ${event.detail.zipcode}. Please wait..`, '', {duration: 3000});
+  }
 
 }

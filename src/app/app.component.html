@@ -49,8 +49,9 @@
             <img mat-card-sm-image src="../assets/images/React-icon.png">
         </mat-card-title-group>
         
-        <mat-card-content>
-            <div *ngIf="showReact"><app-not-implemented></app-not-implemented></div>
+        <mat-card-content *ngIf="showReact">
+            <!-- <div *ngIf="showReact"><app-not-implemented></app-not-implemented></div> -->
+            <rn-webcomponent title="Store Locator" (search)="reactButtonClicked($event)"></rn-webcomponent>
         </mat-card-content>
 
         <mat-card-actions>
@@ -67,9 +68,9 @@
             <img mat-card-sm-image src="../assets/images/stencil-icon.png">
         </mat-card-title-group>
         
-        <mat-card-content>
+        <mat-card-content *ngIf="showStencil">
             <!-- <div *ngIf="showStencil"><app-not-implemented></app-not-implemented></div> -->
-            <stencil-locator name="aaaaaa"></stencil-locator>
+            <s-locator name="Pharmacy Locator" (search)="stencilButtonClicked($event)"></s-locator>
         </mat-card-content>
 
         <mat-card-actions>
