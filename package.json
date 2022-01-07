@@ -24,7 +24,7 @@
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.5",
     "rxjs": "~7.4.0",
-    "store-locator": "file:../cvs-workspace/dist/store-locator/store-locator-0.0.1.tgz",
+
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
